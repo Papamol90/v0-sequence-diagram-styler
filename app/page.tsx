@@ -359,11 +359,25 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Hint text */}
+      {/* Footer */}
       <footer className="px-6 py-3 border-t border-border bg-card">
-        <p className="text-xs text-muted-foreground text-center">
-          Click on any participant or message in the diagram to view business impact details
-        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
+          <p>
+            Click on any participant or message in the diagram to view details
+          </p>
+          <div className="flex items-center gap-3">
+            <span>Private project - No data is stored or collected</span>
+            <span className="text-border">|</span>
+            <a 
+              href="https://github.com/Papamol90/v0-sequence-diagram-styler" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
       </footer>
 
       {/* Business Impact Drawer */}
